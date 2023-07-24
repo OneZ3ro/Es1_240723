@@ -1,0 +1,451 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 15px;
+  background-image: url("../img/sfondo.png");
+  background-position: center center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  display: none;
+} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+  background: rgb(0, 160, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  position: relative;
+}
+
+header img {
+  width: 150px;
+}
+
+header nav {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-25%, -50%);
+}
+
+header nav ul {
+  margin: 0;
+}
+
+header nav li {
+  list-style: none;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  color: red;
+}
+
+header nav li a::before {
+  content: "\22c6\0020";
+}
+
+header p {
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+header div,
+header img,
+header p,
+header nav,
+header li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+}
+
+#html-logo {
+  max-height: 70px;
+  margin-bottom: 10px;
+  border: 4px solid #03a0c6;
+  outline: 4px solid purple;
+}
+
+section {
+  background-color: #e3e3e3;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+section h2 {
+  background-color: #a3a3a3;
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
+}
+
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
+  margin-bottom: 1.2em;
+}
+
+h1 + p {
+  color: #a0a0a0;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+}
+
+a {
+  color: #00a0c6;
+  font-weight: bold;
+}
+
+strong {
+  color: #a02571;
+  font-weight: bold;
+}
+
+code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 5px;
+}
+
+iframe {
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+iframe,
+section {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+  height: 30vh;
+}
+
+section {
+  border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+  width: 70vw;
+  margin: 70px auto;
+}
+
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+
+input {
+  border: 0;
+  border-bottom: 1px dashed #333;
+  padding-left: 10px;
+  width: 30vw;
+  height: 6vh;
+  font-size: 12px;
+}
+
+button {
+  background-color: #3f6bca;
+  padding: 4px 7px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  width: 10vw;
+  height: 6vh;
+  font-size: 12px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+aside div {
+  display: inline-block;
+  width: 33%;
+  background-color: #e3e3e3;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(53, 53, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
+  box-shadow: 0 3px 3px #444;
+  color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: fuchsia;
+}
+
+@media screen and (max-device-width: 1199px) {
+  header {
+    text-align: center;
+    position: unset;
+  }
+
+  header div,
+  header p,
+  header nav,
+  header li {
+    display: block;
+  }
+
+  header p {
+    margin-bottom: 1.2em;
+  }
+
+  header div img {
+    height: 55px;
+    margin-bottom: 20px;
+  }
+
+  header nav {
+    position: unset;
+    transform: none;
+  }
+
+  header li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  #html-logo {
+    max-height: 8vh;
+    margin-bottom: 10px;
+  }
+
+  p,
+  main li,
+  caption,
+  td,
+  tr,
+  input,
+  button {
+    font-size: initial;
+  }
+
+  table {
+    width: 50vw;
+    margin: 65px auto;
+  }
+
+  section {
+    border-radius: 0;
+  }
+
+  section h2 {
+    text-transform: none;
+  }
+
+  iframe,
+  section {
+    display: block;
+    width: 100%;
+    height: 30vh;
+  }
+
+  input {
+    padding-left: 10px;
+    width: 60vw;
+    height: 6vh;
+    font-size: 12px;
+  }
+
+  button {
+    width: 13vw;
+    height: 6vh;
+    font-size: 12px;
+  }
+
+  aside div {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-device-width: 767px) {
+  header {
+    text-align: center;
+    position: unset;
+  }
+
+  header div,
+  header p,
+  header nav,
+  header li {
+    display: block;
+  }
+
+  header p {
+    margin-bottom: 1.2em;
+  }
+
+  header div img {
+    height: 55px;
+    margin-bottom: 20px;
+  }
+
+  header nav {
+    position: unset;
+    transform: none;
+  }
+
+  header li {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  #html-logo {
+    max-height: 8vh;
+    margin-bottom: 10px;
+  }
+
+  p,
+  main li,
+  caption,
+  td,
+  tr,
+  input,
+  button {
+    font-size: 12px;
+  }
+
+  section {
+    border-radius: 0;
+  }
+
+  section h2 {
+    text-transform: none;
+    font-size: 16px;
+  }
+
+  table {
+    min-width: initial;
+    margin: initial;
+  }
+
+  iframe,
+  section {
+    display: block;
+    width: 100%;
+    height: 30vh;
+  }
+
+  input {
+    padding-left: 7px;
+    width: 40vw;
+    height: 4vh;
+  }
+
+  button {
+    height: 4vh;
+  }
+
+  aside a {
+    font-size: 13px;
+  }
+
+  aside div {
+    display: block;
+    width: 100%;
+  }
+}
