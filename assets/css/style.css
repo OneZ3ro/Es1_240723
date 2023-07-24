@@ -2,7 +2,6 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
   font-size: 1.4rem;
@@ -11,11 +10,9 @@ body {
   background-image: url("../img/sfondo.png");
   background-position: center center;
 }
-
 * {
   box-sizing: border-box;
 }
-
 hr {
   display: none;
 } /* rimuove l'elemento */
@@ -28,72 +25,44 @@ header {
     rgba(0, 160, 198, 1) 0%,
     rgba(3, 109, 134, 1) 68%
   );
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
-  padding: 1.5em;
-  position: relative;
+  padding: 2em 1.5em;
 }
-
-header img {
-  width: 150px;
+header div img {
+  margin-bottom: 20px;
 }
-
-header nav {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translate(-25%, -50%);
-}
-
 header nav ul {
   margin: 0;
 }
-
 header nav li {
   list-style: none;
 }
-
 header nav li a {
   color: white;
   text-decoration: none;
 }
-
 header nav li a:hover {
   color: red;
 }
-
 header nav li a::before {
   content: "\22c6\0020";
-}
-
-header p {
-  margin-left: 25px;
-  margin-bottom: 0;
-}
-
-header div,
-header img,
-header p,
-header nav,
-header li {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 /* MAIN */
 main {
   background-color: #fff;
   box-shadow: 0 3px 3px #444;
-  padding: 2em 1em;
+  padding: 2em;
   margin-bottom: 1.5em;
 }
 
 #html-logo {
-  max-height: 70px;
+  max-height: 10vh;
   margin-bottom: 10px;
   border: 4px solid #03a0c6;
   outline: 4px solid purple;
@@ -104,7 +73,6 @@ section {
   padding: 1em;
   margin-bottom: 2em;
 }
-
 section h2 {
   background-color: #a3a3a3;
   text-align: center;
@@ -122,7 +90,6 @@ h1 {
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
 }
-
 p,
 address,
 ul,
@@ -131,73 +98,51 @@ dl,
 blockquote {
   margin-bottom: 1.2em;
 }
-
 h1 + p {
   color: #a0a0a0;
 }
-
 ul,
 ol {
   margin-left: 2em;
 }
-
 a {
   color: #00a0c6;
   font-weight: bold;
 }
-
 strong {
   color: #a02571;
   font-weight: bold;
 }
-
 code {
   background-color: #e3e3e3;
   border: 1px solid #969494;
   border-radius: 5px;
 }
-
 iframe {
+  width: 100%;
   height: auto;
   margin-bottom: 2em;
   border-radius: 20px;
 }
 
-iframe,
-section {
-  display: inline-block;
-  vertical-align: middle;
-  width: 49%;
-  height: 30vh;
-}
-
-section {
-  border-radius: 20px;
-}
-
 /* TABELLE */
 table {
-  width: 70vw;
-  margin: 70px auto;
+  margin-bottom: 2em;
 }
-
 caption {
   font-weight: bold;
   font-style: italic;
 }
-
 thead tr {
   background-color: #3f6bca;
   color: #ffffff;
 }
-
 th,
 td {
   padding: 12px 15px;
   vertical-align: bottom;
   text-align: center;
 }
-
 tbody tr {
   border-bottom: 1px solid #dddddd;
 }
@@ -211,46 +156,34 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
-
 input {
+  padding: 5px;
   border: 0;
   border-bottom: 1px dashed #333;
-  padding-left: 10px;
-  width: 30vw;
-  height: 6vh;
-  font-size: 12px;
 }
-
 button {
-  background-color: #3f6bca;
   padding: 4px 7px;
+  background-color: #3f6bca;
   border: 0;
   color: white;
   font-weight: bold;
-  width: 10vw;
-  height: 6vh;
-  font-size: 12px;
 }
 
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
   text-align: center;
   color: #333;
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
-
 aside div {
-  display: inline-block;
-  width: 33%;
   background-color: #e3e3e3;
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
 }
-
 aside div p:last-child {
   margin-bottom: 0;
   font-size: 0.8em;
@@ -271,186 +204,155 @@ footer {
   text-align: center;
   font-size: 1.2rem;
 }
-
 footer a {
   color: fuchsia;
 }
 
-@media screen and (max-device-width: 1199px) {
+@media screen and (min-width: 330px) {
   header {
-    text-align: center;
-    position: unset;
-  }
-
-  header div,
-  header p,
-  header nav,
-  header li {
-    display: block;
+    position: initial;
+    padding: 2em 1.5em;
   }
 
   header p {
-    margin-bottom: 1.2em;
-  }
-
-  header div img {
-    height: 55px;
-    margin-bottom: 20px;
+    display: block;
   }
 
   header nav {
-    position: unset;
+    position: initial;
     transform: none;
   }
 
   header li {
     display: inline-block;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 
-  #html-logo {
-    max-height: 8vh;
-    margin-bottom: 10px;
+  header p,
+  header li {
+    font-size: 15px;
   }
 
   p,
-  main li,
-  caption,
-  td,
+  li,
   tr,
-  input,
-  button {
-    font-size: initial;
+  td,
+  caption {
+    font-size: 16px;
+  }
+
+  aside h2 {
+    font-size: 30px;
+  }
+
+  footer p,
+  address {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #html-logo {
+    max-height: 7vh;
+    margin-bottom: 10px;
+    border: 4px solid #03a0c6;
+    outline: 4px solid purple;
   }
 
   table {
     width: 50vw;
-    margin: 65px auto;
-  }
-
-  section {
-    border-radius: 0;
+    margin: 60px auto;
   }
 
   section h2 {
-    text-transform: none;
-  }
-
-  iframe,
-  section {
-    display: block;
-    width: 100%;
-    height: 30vh;
+    text-transform: initial;
+    font-size: 20px;
   }
 
   input {
-    padding-left: 10px;
-    width: 60vw;
-    height: 6vh;
-    font-size: 12px;
+    min-width: 70vw;
+    min-height: 6vh;
+    font-size: 13px;
+    padding-left: 13px;
   }
 
   button {
-    width: 13vw;
-    height: 6vh;
-    font-size: 12px;
+    font-size: 13px;
+    min-height: 5vh;
+    min-width: 8vw;
   }
 
-  aside div {
-    display: block;
-    width: 100%;
+  aside h2 {
+    font-size: 25px;
+  }
+
+  address {
+    max-width: 38vw;
+    margin-inline: auto;
+  }
+
+  footer p,
+  address {
+    font-size: initial;
   }
 }
 
-@media screen and (max-device-width: 767px) {
+@media screen and (min-width: 1200px) {
   header {
-    text-align: center;
-    position: unset;
+    position: relative;
+    text-align: left;
+    padding: 1.5em;
   }
 
-  header div,
-  header p,
-  header nav,
-  header li {
-    display: block;
+  header div img,
+  header div p {
+    vertical-align: middle;
+    margin: 0;
   }
 
   header p {
-    margin-bottom: 1.2em;
-  }
-
-  header div img {
-    height: 55px;
-    margin-bottom: 20px;
+    display: inline-block;
   }
 
   header nav {
-    position: unset;
-    transform: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-20%, -50%);
   }
 
   header li {
     display: inline-block;
-    padding-right: 10px;
-  }
-
-  #html-logo {
-    max-height: 5vh;
-    margin-bottom: 10px;
-    border: 4px solid #03a0c6;
-    outline: 4px solid purple;
-    border: 3px solid #03a0c6;
-    outline: 3px solid purple;
-  }
-
-  p,
-  main li,
-  caption,
-  td,
-  tr,
-  input,
-  button {
-    font-size: 12px;
-  }
-
-  section {
-    border-radius: 0;
-  }
-
-  section h2 {
-    text-transform: none;
-    font-size: 16px;
   }
 
   table {
-    min-width: initial;
-    margin: initial;
+    width: 70vw;
+    margin: 70px auto;
   }
 
   iframe,
   section {
-    display: block;
-    width: 100%;
-    height: 30vh;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin-right: -3px;
+    border-radius: 20px;
+    min-height: 25vh;
+  }
+
+  section h2 {
+    font-size: 18px;
   }
 
   input {
-    padding-left: 7px;
-    width: 40vw;
-    height: 4vh;
-  }
-
-  button {
-    height: 4vh;
-  }
-
-  aside a {
-    font-size: 13px;
+    min-width: 30vw;
+    min-height: 5vh;
   }
 
   aside div {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 33.3%;
+    margin-left: -3px;
   }
 }
 
@@ -461,5 +363,12 @@ footer a {
   aside,
   footer {
     display: none;
+  }
+
+  #html-logo {
+    max-height: 6vh;
+    margin-bottom: 10px;
+    border: 4px solid #03a0c6;
+    outline: 4px solid purple;
   }
 }
