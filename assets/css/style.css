@@ -366,7 +366,9 @@ footer a {
   }
 
   #html-logo {
-    max-height: 6vh;
+    float: left;
+    margin-right: 20px;
+    max-height: 4vh;
     margin-bottom: 10px;
     border: 4px solid #03a0c6;
     outline: 4px solid purple;
